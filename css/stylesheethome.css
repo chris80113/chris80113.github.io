@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #030432;
+    color: #eeeeee;
+    font-family: 'PT Serif';
+    margin: 1em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    font-weight: lighter;
+    height: 7vh;
+}
+
+h2{
+    font-weight: lighter;
+    margin-left: 0em;
+}
+
+h3{
+    font-size: 2em;
+    text-decoration: underline;
+    margin-left: 2em;
+}
+
+
+a{
+    color: #f2a249;
+    text-decoration: underline;
+    font-weight: lighter;
+
+}
+a:hover{
+    color: lightgreen;
+}
+a:visited{
+    color: #f2a249;
+}
+
+#protitle
+{
+    font-size: 3em;
+    margin-bottom: 0em;
+    margin-top: 0vh;
+    margin-right: 20em;
+}
+
+#tag{
+    text-align: center;
+    height: 2vh;
+    font-size: 3em;
+}
+
+p{
+    text-align: left;
+    font-family: 'PT Serif';
+    margin: 1em;
+    font-size: 1.75em;
+    font-stretch: normal;
+}
+
+p.a{
+    color: #f2a249;
+    font-weight: lighter;
+    grid-area: first;
+    font-size: 1.25em;
+    margin-top: 0;
+    text-align: center;
+}
+
+pre{
+    text-align: left;
+    font-family: 'PT Serif';
+    margin: 1em;
+    font-size: 1.3em;
+    font-stretch: normal;
+}
+
+#navigation{
+    
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "first second third";
+    grid-template-rows: [first second third] 10vh;
+    grid-template-columns: [first] 40vw [second] 20vw [third] 20vw;
+    font-weight: bold;
+    font-size: 2em;
+    max-width: 100%;
+    margin-bottom: 1.5em;
+}
+
+
+a.b{
+grid-area: second;
+border-bottom: solid 2px #4f4f6e;
+    text-align: center;
+}
+a.c{
+grid-area: third;
+border-bottom: solid 2px #4f4f6e;
+    text-align: center;
+}
+
+
+#aboutMe{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 10vw;
+
+}
+
+#about{
+color: #fff;
+width: 80vw;
+height: 75vh;
+display: grid;
+max-width: 100%;
+grid-template-areas: "Description Photo";
+grid-template-columns:  [Description]30vw [Photo] 30vw;
+background-color: #030432;
+margin-left: 10vw;
+max-height: 72vh;
+
+}
+
+#about img{
+    grid-area: Photo;
+    margin-top: 0;
+    border-radius: 20%;
+    width: 100%;
+    margin-left: 10vw;
+}
+
+#firstp
+{
+
+width: 80vw;
+height: 70vh;
+max-width: 100%;
+display: grid;
+grid-template-areas: "Title Link" "Description Photo";
+grid-template-columns: [Tile Link] 40vw [Description Photo] 40vw;
+
+}
+
+#firstp h3{
+    text-align: center;
+    font-size: 2em;
+    margin-left: 65%;
+    margin-bottom: 1.5em;
+    width: 80%;;
+    font-weight: lighter;
+}
+
+#firstp a{
+    margin-top: 1em;
+    grid-area: Link;
+    font-weight: bold;
+    margin-left: 0.2em;
+    font-size: 1em;
+    text-decoration: underline;
+    font-weight: lighter;
+    }
+
+#firstp p{
+    grid-area: Description;
+    margin: 0;
+    margin-left: 1em;
+    font-size: 1.25em;
+}
+
+#firstp p.l{
+
+    grid-area: Photo;
+    margin-left: 15vw;
+}
+
+#firstp p.l2{
+    grid-area: Photo;
+    margin-left: 5vw;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+#firstp p.d1{
+grid-area: Description;;
+}
+
+#firstp p.d2{
+grid-area: Description;
+margin-top: 5em;
+}
+
+
+#pImg1
+{
+grid-area: Photo;
+margin-left: 4vw;
+width: 90%;
+margin-top: 6.5em;
+
+}
+
+#secondp
+{
+
+margin-top: 3em;
+width: 80vw;
+height: 70vh;
+max-width: 100%;
+display: grid;
+grid-template-areas: "Title Link" "Description Photo";
+grid-template-columns: [Tile Link] 40vw [Description Photo] 40vw;
+
+}
+
+#secondp h3{
+    text-align: center;
+    font-size: 2em;
+    margin-left: 65%;
+    margin-bottom: 1.5em;
+    width: 80%;
+    font-weight: lighter;
+}
+
+#secondp p{
+    grid-area: Description;
+    margin: 0;
+    margin-left: 1em;
+    font-size: 1.25em;
+}
+
+
+#secondp a{
+    margin-top: 1em;
+    grid-area: Link;
+    font-weight: bold;
+    margin-left: 0.2em;
+    font-size: 1em;
+    text-decoration: underline;
+    font-weight: lighter;
+    }
+
+
+#secondp p.Bl{
+
+    grid-area: Photo;
+    margin-left: 8.5vw;
+}
+
+#secondp p.Bl2{
+    grid-area: Photo;
+    margin-left: 5vw;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+#secondp p.Bd1{
+grid-area: Description;;
+}
+
+#secondp p.Bd2{
+grid-area: Description;
+margin-top: 5em;
+}
+
+
+#pImg2
+{
+grid-area: Photo;
+margin-left: 4vw;
+width: 90%;
+margin-top: 6.5em;
+}
+
+br{
+    margin-bottom: 5%
+}
+
+li{
+    font-size: 1.5em;
+}
+
+img{max-width: 100%; 
+    max-height: 100%;
+}
+
+
+
+footer{
+    color: #f2a249;
+    width: 100vw;
+    display: grid;
+    font-size: 0.8em;
+    grid-template-areas: "L Email Resume";
+    grid-template-columns: [L] 25vw [Email] 30vw [Resume] 25vw;
+    max-width: 80%;
+    margin-top: 5%;
+}
+
+p.x{
+ grid-area: L;
+ text-align: center;
+ border-top: solid 2px #4f4f6e;
+ line-height: 9vh;
+  margin: 0;
+  
+}
+
+p.y{
+
+grid-area:  Email;
+text-align: center;
+border-top: solid 2px #4f4f6e;
+line-height: 9vh;
+margin: 0;
+
+}
+
+p.z
+{
+ grid-area: Resume;
+  text-align: center;
+ border-top: solid 2px #4f4f6e;
+  line-height: 9vh;
+   margin: 0;
+}
+
+
+
+
+@media screen and (min-width: 100px ){
+    #navigation{font-size: 0.55em;}
+    a.b, a.c{border-bottom: none;}
+ 
+    footer{font-size: 0.1em;}
+    #about img{margin-left: 20vw;}
+    #aboutMe{font-size: 1em; margin-left: 0;}
+    pre{font-size: 0.3em;}
+    #about{height: 50vh; margin-left: 0;}
+    
+    #protitle{font-size: 0.75em;}
+    #firstp h3{font-size: 0.7em;}
+    #firstp p{font-size: 0.5em;}
+    #secondp h3{font-size: 0.7em;}
+    #secondp p {font-size: 0.5em;}
+    #firstp {height: 45vh;}
+    #secondp {height: 40vh;}
+}
+
+@media screen and (min-width: 600px ){
+    #navigation{font-size: 1em;}
+    
+ 
+    footer{font-size: 0.35em;}
+    #about img{margin-left: 20vw;}
+    #aboutMe{font-size: 1.5em; margin-left: 0;}
+    pre{font-size: 0.7em;}
+    #about{height: 50vh; margin-left: 0;}
+    
+    #protitle{font-size: 1.25em;}
+    #firstp h3{font-size: 1.25em;}
+    #firstp p{font-size: 0.7em;}
+    #secondp h3{font-size: 1.25em;}
+    #secondp p {font-size: 0.7em;}
+    #firstp {height: 45vh;}
+    #secondp {height: 40vh;}
+}
+
+@media screen and (min-width: 768px ){
+    #navigation{font-size: 1.25em;}
+    
+ 
+    footer{font-size: 0.45em;}
+    #about img{margin-left: 20vw;}
+    #aboutMe{font-size: 1.5em; margin-left: 0;}
+    pre{font-size: 0.85em;}
+    #about{height: 50vh; margin-left: 0;}
+    
+    #protitle{font-size: 1.5em;}
+    #firstp h3{font-size: 1.5em;}
+    #firstp p{font-size: 0.9em;}
+    #secondp h3{font-size: 1.75em;}
+    #secondp p {font-size: 0.9em;}
+    #secondp {height: 50vh;}
+}
+
+@media screen and (min-width: 992px ){
+    #navigation{font-size: 1.5em;}
+    footer{font-size: 0.55em;}
+    #about img{margin-left: 20vw;}
+    #aboutMe{font-size: 1.5em; margin-left: 0;}
+    pre{font-size: 1em;}
+    #about{height: 50vh; margin-left: 0;}
+    
+    #protitle{font-size: 2em;}
+    #firstp h3{font-size: 1.75em;}
+    #firstp p{font-size: 1em;}
+    #secondp h3{font-size: 1.75em;}
+    #secondp p {font-size: 1em;}
+    #secondp {height: 50vh;}
+}
+
+
+@media screen and (min-width: 1200px ){
+    footer{font-size: 0.7em;}
+    #about img{margin-left: 15vw;}
+    #aboutMe{font-size: 1.75em;}
+    pre{font-size: 1.1em;}
+    #about{height: 50vh;}
+    
+    #protitle{font-size: 2.5em;}
+    #secondp {height: 50vh;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1400px ){
+
+    body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #030432;
+    color: #eeeeee;
+    font-family: 'PT Serif';
+    margin: 1em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    font-weight: lighter;
+    height: 7vh;
+}
+
+h2{
+    font-weight: lighter;
+    margin-left: 0em;
+}
+
+h3{
+    font-size: 2em;
+    text-decoration: underline;
+    margin-left: 2em;
+}
+
+
+a{
+    color: #f2a249;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+a:hover{
+    color: lightgreen;
+}
+a:visited{
+    color: #78B3BA;
+}
+
+#protitle
+{
+    font-size: 3em;
+    margin-bottom: 0em;
+    margin-top: 0vh;
+    margin-right: 20em;
+}
+
+#tag{
+    text-align: center;
+    height: 2vh;
+    font-size: 3em;
+}
+
+p{
+    text-align: left;
+    font-family: 'PT Serif';
+    margin: 1em;
+    font-size: 1.75em;
+    font-stretch: normal;
+}
+
+p.a{
+    color: #f2a249;
+    font-weight: lighter;
+    grid-area: first;
+    font-size: 1.25em;
+    margin-top: 0;
+    text-align: center;
+}
+
+pre{
+    text-align: left;
+    font-family: 'PT Serif';
+    margin: 1em;
+    font-size: 1.3em;
+    font-stretch: normal;
+}
+
+#navigation{
+    
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "first second third";
+    grid-template-rows: [first second third] 10vh;
+    grid-template-columns: [first] 40vw [second] 20vw [third] 20vw;
+    font-weight: bold;
+    font-size: 2em;
+    max-width: 100%;
+    margin-bottom: 1.5em;
+}
+
+
+a.b{
+grid-area: second;
+border-bottom: solid 2px #4f4f6e;
+    text-align: center;
+}
+a.c{
+grid-area: third;
+border-bottom: solid 2px #4f4f6e;
+    text-align: center;
+}
+
+
+#aboutMe{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 10vw;
+
+}
+
+#about{
+color: #fff;
+width: 80vw;
+height: 75vh;
+display: grid;
+max-width: 100%;
+grid-template-areas: "Description Photo";
+grid-template-columns:  [Description]30vw [Photo] 30vw;
+background-color: #030432;
+margin-left: 10vw;
+max-height: 72vh;
+
+}
+
+#about img{
+    grid-area: Photo;
+    margin-top: 0;
+    border-radius: 20%;
+    width: 100%;
+    margin-left: 10vw;
+}
+
+#firstp
+{
+
+width: 80vw;
+height: 70vh;
+max-width: 100%;
+display: grid;
+grid-template-areas: "Title Link" "Description Photo";
+grid-template-columns: [Tile Link] 40vw [Description Photo] 40vw;
+
+}
+
+#firstp h3{
+    text-align: center;
+    font-size: 2em;
+    margin-left: 65%;
+    margin-bottom: 1.5em;
+    width: 80%;;
+    font-weight: lighter;
+}
+
+#firstp a{
+    margin-top: 1em;
+    grid-area: Link;
+    font-weight: bold;
+    margin-left: 0.2em;
+    font-size: 1em;
+    text-decoration: underline;
+    font-weight: lighter;
+    }
+
+#firstp p{
+    grid-area: Description;
+    margin: 0;
+    margin-left: 1em;
+    font-size: 1.25em;
+}
+
+#firstp p.l{
+
+    grid-area: Photo;
+    margin-left: 15vw;
+}
+
+#firstp p.l2{
+    grid-area: Photo;
+    margin-left: 5vw;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+#firstp p.d1{
+grid-area: Description;;
+}
+
+#firstp p.d2{
+grid-area: Description;
+margin-top: 5em;
+}
+
+
+#pImg1
+{
+grid-area: Photo;
+margin-left: 4vw;
+width: 90%;
+margin-top: 6.5em;
+
+}
+
+#secondp
+{
+
+margin-top: 3em;
+width: 80vw;
+height: 70vh;
+max-width: 100%;
+display: grid;
+grid-template-areas: "Title Link" "Description Photo";
+grid-template-columns: [Tile Link] 40vw [Description Photo] 40vw;
+
+}
+
+#secondp h3{
+    text-align: center;
+    font-size: 2em;
+    margin-left: 65%;
+    margin-bottom: 1.5em;
+    width: 80%;
+    font-weight: lighter;
+}
+
+#secondp p{
+    grid-area: Description;
+    margin: 0;
+    margin-left: 1em;
+    font-size: 1.25em;
+}
+
+
+#secondp a{
+    margin-top: 1em;
+    grid-area: Link;
+    font-weight: bold;
+    margin-left: 0.2em;
+    font-size: 1em;
+    text-decoration: underline;
+    font-weight: lighter;
+    }
+
+
+#secondp p.Bl{
+
+    grid-area: Photo;
+    margin-left: 8.5vw;
+}
+
+#secondp p.Bl2{
+    grid-area: Photo;
+    margin-left: 5vw;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+#secondp p.Bd1{
+grid-area: Description;;
+}
+
+#secondp p.Bd2{
+grid-area: Description;
+margin-top: 5em;
+}
+
+
+#pImg2
+{
+grid-area: Photo;
+margin-left: 4vw;
+width: 90%;
+margin-top: 6.5em;
+}
+
+br{
+    margin-bottom: 5%
+}
+
+li{
+    font-size: 1.5em;
+}
+
+img{max-width: 100%; 
+    max-height: 100%;
+}
+
+
+
+footer{
+    color: #f2a249;
+    width: 100vw;
+    display: grid;
+    font-size: 0.8em;
+    grid-template-areas: "L Email Resume";
+    grid-template-columns: [L] 25vw [Email] 30vw [Resume] 25vw;
+    max-width: 80%;
+    margin-top: 5%;
+}
+
+p.x{
+ grid-area: L;
+ text-align: center;
+ border-top: solid 2px #4f4f6e;
+ line-height: 9vh;
+  margin: 0;
+  
+}
+
+p.y{
+
+grid-area:  Email;
+text-align: center;
+border-top: solid 2px #4f4f6e;
+line-height: 9vh;
+margin: 0;
+
+}
+
+p.z
+{
+ grid-area: Resume;
+  text-align: center;
+ border-top: solid 2px #4f4f6e;
+  line-height: 9vh;
+   margin: 0;
+}
+}
